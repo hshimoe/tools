@@ -38,7 +38,7 @@ def make_new_file_name(file_top = "data", data_type = ".csv", file_path = "./"):
                 if tmp < int(num_match.group()):
                     tmp = int(num_match.group())
     
-    return file_top +"_"+ str(tmp+1)+".csv"
+    return file_path+file_top +"_"+ str(tmp+1)+".csv"
 
 #動作確認用
 #print(make_new_file_name())
